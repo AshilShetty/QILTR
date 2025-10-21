@@ -135,84 +135,16 @@ qiltr/
 │   ├── convergence_analysis_report.md    # Convergence testing
 │   └── asymptotic_convergence_report.md  # Hard conditions
 │
-├── QMI_SUBMISSION/              # Final journal submission package
-│   ├── thesis.tex               # Complete manuscript (LaTeX)
-│   ├── references.bib           # Bibliography (55 references, fixed)
-│   ├── sn-jnl.cls               # Springer Nature journal class
-│   ├── sn-mathphys-num.bst      # Bibliography style
-│   ├── bst/                     # Additional style files
-│   └── *.png                    # All manuscript figures (12 files)
-│
-├── docs/                         # Documentation
-│   ├── REAL_WORLD_DATASETS.md   # Dataset acquisition guide
-│   └── IMPLEMENTATION_SUMMARY.md # Implementation details
 │
 ├── data/                         # Dataset handling
 ├── config.py                     # Centralized configuration
 ├── run_experiments.py            # Main experiment runner
 ├── requirements.txt              # Python dependencies
 ├── README.md                     # This file
-├── REPRODUCIBILITY.md            # Complete reproducibility guide
-├── FINAL_SUMMARY.md             # Complete experimental summary
-├── HONEST_AUDIT_REPORT.md       # Transparent results report
-└── CHANGES_SUMMARY.txt          # Development history
 ```
 
 ---
 
-## 🎓 For Q1 Journal Submission
-
-### What This Framework Provides
-
-#### 1. Statistical Rigor ✅
-- **30 independent trials** per scenario
-- **95% confidence intervals** for all metrics
-- **Paired t-tests** and **Wilcoxon signed-rank tests**
-- **Cohen's d effect sizes** for all comparisons
-- Publication-quality error bars on all plots
-
-#### 2. Design Justification ✅
-Systematic ablation studies for:
-- Feature scaling strategy (bounded/unbounded/none)
-- Bandwidth hyperparameter sensitivity
-- Quantum dimension effect
-- Number of centroids impact
-- Tucker rank configuration
-
-#### 3. Practical Validation ✅
-- **MNIST Tensor dataset** (semi-synthetic, works immediately)
-- **Templates for QM9, HCP, UCF101** (see `docs/REAL_WORLD_DATASETS.md`)
-- Cross-validation with multiple random splits
-- Comparison against established baselines
-
-#### 4. Complete Reproducibility ✅
-- Fixed random seeds throughout
-- Detailed installation instructions
-- Expected results with tolerance ranges
-- Troubleshooting guide
-- Platform-tested (Windows, Linux, macOS)
-
-### Key Files for Paper
-
-**Figures (select 4-5 for main paper)**:
-1. `challenging_scenarios_comparison.png` - Main result (4-panel)
-2. `statistical_validation_bars.png` - With error bars and p-values
-3. `ablation_bandwidth.png` - Design justification
-4. `complexity_analysis.png` - Computational cost
-5. `realworld_validation.png` - Practical applicability
-
-**Tables**:
-1. MSE comparison across scenarios
-2. Statistical significance summary
-3. Ablation study results
-4. Computational complexity scaling
-
-**Text**:
-- Copy results directly from markdown reports
-- Use p-values and confidence intervals from statistical validation
-- Reference ablation studies for hyperparameter choices
-
----
 
 ## 📖 Documentation
 
@@ -405,40 +337,8 @@ High Nonstationarity:
 
 ---
 
-## 📄 Citation
 
-If you use this code, please cite:
 
-```bibtex
-@article{qiltr2025,
-  title={Quantum-Inspired Local Tensor Regression: Theory and Validation},
-  author={Your Name},
-  journal={Target Journal},
-  year={2025}
-}
-```
-
----
-
-## 🎓 For Your Thesis Committee
-
-### What Makes This Submission Strong
-
-1. **Statistical Rigor**: 30 trials, CI, p-values, effect sizes
-2. **Comprehensive Validation**: 5 scenarios + real-world data
-3. **Design Justification**: Systematic ablations
-4. **Honest Reporting**: Includes tie scenarios
-5. **Full Reproducibility**: Fixed seeds, documentation
-6. **Publication Quality**: All figures 300 DPI, error bars
-
-### Key Contributions
-
-1. **Algorithmic**: Quantum-inspired Bures distance for local tensor regression
-2. **Theoretical**: Bounded feature scaling for outlier robustness
-3. **Empirical**: Comprehensive validation across diverse conditions
-4. **Practical**: Real-world dataset validation
-
----
 
 ## 📞 Support
 
@@ -481,8 +381,7 @@ qiltr/
 
 ## Experiments
 
-### Experiment 1-3: Convergence Analysis (ENHANCED)
-
+### Experiment 1-3: Convergence Analysis 
 **Validates**: Theorem 1 (faster convergence with quantum geometry)
 
 **🆕 NEW: Challenging Scenarios Testing**
@@ -609,50 +508,12 @@ from src.qiltr import QILTR
 
 **Import errors**: Ensure you're running from the repository root
 
-## Citation
 
-If you use this code, please cite:
-
-```bibtex
-@article{naveen2024qiltr,
-  title={A Geometric Analysis of Quantum-Inspired Local Tensor Regression: Formal Proofs of Convergence and Tractability},
-  author={Naveen, Shetty Nihal and Shetty, Ashil and Udupa, B Karthik},
-  journal={Quantum Machine Intelligence},
-  year={2024},
-  note={Submitted}
-}
 ```
 
 ---
 
-## 📋 Current Status
 
-**✅ Journal Submission**: Manuscript submitted to *Quantum Machine Intelligence*
-- Complete LaTeX manuscript with 55 properly formatted references
-- All bibliography issues resolved (no more ??? marks)
-- 12 publication-quality figures included
-- Submission package: `QMI_SUBMISSION/`
-
-**✅ Codebase**: Production-ready implementation
-- All experimental validation complete
-- Results preserved in `results/` directory
-- Full reproducibility with fixed random seeds
-- Clean repository structure for public release
-
-**✅ Next Steps**: Ready for Git repository publication
-- Repository cleaned and organized
-- Documentation updated and comprehensive
-- All temporary files removed
-- Ready for `git push` to main repository
-
-```
-@article{qiltr2025,
-  title={A Geometric Analysis of Quantum-Inspired Local Tensor Regression: 
-         Formal Proofs of Convergence and Tractability},
-  author={[Your Name]},
-  journal={[Target Journal]},
-  year={2025}
-}
 ```
 
 ## License
@@ -661,4 +522,4 @@ MIT License
 
 ## Contact
 
-For questions or issues, please open a GitHub issue or contact [your email].
+For questions or issues, please open a GitHub issue or contact nihalshettyit@gmail.com.
