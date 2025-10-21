@@ -4,7 +4,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Status: Publication Ready](https://img.shields.io/badge/status-publication%20ready-success.svg)]()
 
-**Complete experimental validation framework for Q1 journal submission**
+\
 
 ## 🎯 Overview
 
