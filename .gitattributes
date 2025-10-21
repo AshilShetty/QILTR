@@ -1,2 +1,4 @@
+data/QM9/processed/*.pt filter=lfs diff=lfs merge=lfs -text
+data/QM9/raw/*.sdf filter=lfs diff=lfs merge=lfs -text
 *.pt filter=lfs diff=lfs merge=lfs -text
 *.sdf filter=lfs diff=lfs merge=lfs -text
